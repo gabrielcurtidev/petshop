@@ -218,7 +218,7 @@ body::-webkit-scrollbar{
 .services-petshop img{
     width: 134px;
     height: 134px;
-    flex-shrink: 0;
+    
     
     
 }
@@ -237,8 +237,6 @@ body::-webkit-scrollbar{
 }
 
 .services-petshop .services{
-    position: relative;
-
     display: flex;
     align-items: center;
     justify-content: center;
@@ -246,7 +244,6 @@ body::-webkit-scrollbar{
     row-gap: 20px;
     width: 244px;
     height: 319px;
-    flex-shrink: 0;
     border-radius: 20px;
     background: var(--color-secundary);
     text-align: center;
@@ -255,83 +252,10 @@ body::-webkit-scrollbar{
     transition: all .3s;
     
 }
-
-
-.services:nth-child(1):hover{
+.services:hover{
     scale: 1.03;
 }
-.services:nth-child(1):hover::after{
-    content: 'service1';
-    color: var(--color-terceira);
-    font-weight: bold;
 
-
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 20px;
-    background-color: #28045fd7;
-}
-
-.services:nth-child(2):hover{
-    scale: 1.03;
-}
-.services:nth-child(2):hover::after{
-    content: 'service2';
-    color: var(--color-terceira);
-    font-weight: bold;
-
-
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 20px;
-    background-color: #28045fd7;
-}
-
-.services:nth-child(3):hover{
-    scale: 1.03;
-}
-.services:nth-child(3):hover::after{
-    content: 'service3';
-    color: var(--color-terceira);
-    font-weight: bold;
-
-
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 20px;
-    background-color: #28045fd7;
-}
-
-.services:nth-child(4):hover{
-    scale: 1.03;
-}
-.services:nth-child(4):hover::after{
-    content: 'service4';
-    color: var(--color-terceira);
-    font-weight: bold;
-
-
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 20px;
-    background-color: #28045fd7;
-}
 
 /* ======================== */
 
@@ -348,6 +272,7 @@ body::-webkit-scrollbar{
 
 .container-video img{
     position: absolute;
+    bottom: 0;
     opacity: 0.1;
     width: 90%;
     object-fit: cover;

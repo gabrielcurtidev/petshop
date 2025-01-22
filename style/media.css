@@ -62,9 +62,89 @@
         opacity: 1;
     }
 
-    
-}
+    .hero-container{
+        flex-direction: column;
+    }
 
-@media (max-width: 450px){
+    .hero-container .hero-text{
+        margin-bottom: 2rem;
+    }
+
+    .services-section{
+        height: 100%;
+        margin-bottom: 4rem;
+    }
     
+    .services-section .services-petshop{
+        flex-direction: ;
+        flex-wrap: wrap;
+    }
+
+    .container-video .video-container .video{  
+        width: 400px;
+        height: auto;
+
+    }
+
+    .video-text h1{
+        max-width: 150px;
+        font-size: 26px;
+    }
+    
+    .video-text p{
+        max-width: 487px;
+        font-size: 15px;
+ 
+    }
+
+    .about-container{
+        gap: 2rem;
+        margin: 0;
+    }
+
+    .about-container img{
+        width: 350px;
+    }
+    
+    .about-container p{
+        max-width: 350px;
+        font-size: .8rem;
+
+    }
+
+@media screen and (max-width: 500px){
+    .hero-text,
+    .img-topo-site{
+        width: 100%;
+    }
+
+    .container-video,
+    .about-container{
+        text-align: center;
+        margin: auto;
+        flex-direction: column;
+    }
+
+    .container-video{
+        padding: 3rem;
+    }
+
+    .img-topo-site{
+        
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .img-topo-site img{
+        width: 420px;
+    }
+
+    .register-click{
+        margin: auto;
+    }
+
+    .about-container{
+        margin: 3rem 0;
+    }
 }
